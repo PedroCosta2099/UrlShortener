@@ -1,0 +1,26 @@
+.link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+}
+
+#short{
+    color:var(--cyan);
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    .button{
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.5rem;
+    }
+
+    .dark{
+        background-color: var(--dark);
+        opacity: 1;
+    }
+}

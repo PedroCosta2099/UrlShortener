@@ -1,0 +1,30 @@
+#top {
+    display: flex;
+    margin-right: 0;
+    justify-content: space-between;
+    #top-container {
+        
+        width:50%;
+        h1 {
+            font-size: 60px;
+            line-height: 4.5rem;
+            margin-bottom: 0;
+            color:var(--very-dark-blue)
+        }
+
+        p {
+            width: 70%;
+            color: var(--grayish-violet);
+            font-size: var(--font-size);
+        }
+
+        #get-started{
+            margin-top: 1rem;
+            padding:0.75rem 2rem;
+            font-size: var(--font-size);
+            font-weight:bold;
+        }
+        
+    }
+    
+}

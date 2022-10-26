@@ -1,0 +1,13 @@
+#boost{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../../media/images/bg-boost-desktop.svg') var(--dark);
+    padding: 3rem;
+    #title{
+        color:#fff;
+        font-size:25px;
+    }
+
+}

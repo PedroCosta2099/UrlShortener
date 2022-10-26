@@ -1,0 +1,53 @@
+.short{
+    background-color: var( --second-gray);
+    margin-top: 5rem;
+#shorter{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: -4.5rem;
+    
+    #form{background: url('../../media/images/bg-shorten-desktop.svg') no-repeat var(--dark);
+    background-size: cover;
+  
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        
+        gap:10px;
+        padding: 2rem;
+        border-radius: 10px;
+
+         #link {
+            background-color: white;
+            color:var(--grayish-violet);
+            font-family: var(--font-family);
+            width: 70%;
+            padding: 1rem 1.5rem;
+
+            border-radius: 0.5rem;
+            border: 0px;
+        }
+
+        .button {
+            
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+        }
+    }
+
+    #links{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap:15px;
+    }
+}
+}
