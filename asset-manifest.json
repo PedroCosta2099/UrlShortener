@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/UrlShortener/static/css/main.bf2731b9.css",
+    "main.js": "/UrlShortener/static/js/main.4ff19e76.js",
+    "static/js/787.c1112931.chunk.js": "/UrlShortener/static/js/787.c1112931.chunk.js",
+    "static/media/illustration-working.svg": "/UrlShortener/static/media/illustration-working.c9b5ef5452363d8be3df709375d50bd0.svg",
+    "static/media/icon-fully-customizable.svg": "/UrlShortener/static/media/icon-fully-customizable.a1532a74fa781f6fde327313bd5ffce3.svg",
+    "static/media/icon-brand-recognition.svg": "/UrlShortener/static/media/icon-brand-recognition.c349d3b69f7442e5ac3552e4138e72e7.svg",
+    "static/media/bg-boost-desktop.svg": "/UrlShortener/static/media/bg-boost-desktop.772154c9b0e451733f5e.svg",
+    "static/media/icon-detailed-records.svg": "/UrlShortener/static/media/icon-detailed-records.265c8aea77b546e08ba3575f6a8a9f70.svg",
+    "index.html": "/UrlShortener/index.html",
+    "static/media/bg-shorten-desktop.svg": "/UrlShortener/static/media/bg-shorten-desktop.0d9742f433f4b0d8752b.svg",
+    "main.bf2731b9.css.map": "/UrlShortener/static/css/main.bf2731b9.css.map",
+    "main.4ff19e76.js.map": "/UrlShortener/static/js/main.4ff19e76.js.map",
+    "787.c1112931.chunk.js.map": "/UrlShortener/static/js/787.c1112931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf2731b9.css",
+    "static/js/main.4ff19e76.js"
+  ]
+}
