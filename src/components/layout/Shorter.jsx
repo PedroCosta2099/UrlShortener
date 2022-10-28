@@ -23,14 +23,18 @@ const getLocalStorage = () => {
         e.preventDefault()
 
         if (!text) {
-            alert("Input is empty")
+            e.target[0].classList.add('error')
+            document.getElementById('error').style.display = 'block'
+            
         } else {
+            e.target[0].classList.remove('error')
+            document.getElementById('error').style.display = 'none'
             const shortenLink = async () => {
                 const res = await api({params:{url:text}}) 
                 //axios.get('https://api.shrtco.de/v2/shorten?url=' + text)
                 //fetch(`https://api.shrtco.de/v2/shorten?url=${text}`)
                 const data = res.data
-                console.log(data.result)
+                
                 setLinks(prevLinks => [...prevLinks,data.result])
             }
 
@@ -55,18 +59,20 @@ const getLocalStorage = () => {
                 value={text}
                 onChange={(e) => setText(e.target.value)}
                 >
-
                 </input>
+                
                 <Button id={'shorten'} text={'Shorten It!'}/>
+       <span id="error" className='error'>Please add a link</span>
             </form>
-            <div id='links'>
+            
+        </section>
+        <div id='links'>
             {links?.map(
 
             
                  link => <Link key={key()} original={link.original_link} shorten={link.short_link} />
               ) }
             </div>
-        </section>
     </div>
     );
 }

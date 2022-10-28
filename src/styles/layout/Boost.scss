@@ -8,6 +8,10 @@
     #title{
         color:#fff;
         font-size:25px;
+        @media screen and (max-width:767px) {
+        text-align: center;
+        
+      }
     }
 
 }

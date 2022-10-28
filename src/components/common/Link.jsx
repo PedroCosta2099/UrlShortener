@@ -13,7 +13,9 @@ function Link({original,shorten}) {
     }
     return (  
         <div className='link'>
+            <div id='original'>
             <p>{original}</p>
+            </div>
             <div id='short'>
                 <p>{shorten}</p>
                 <Button id={'copy'} text={text} action={e => copyShort(e)}/>

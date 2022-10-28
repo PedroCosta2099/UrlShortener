@@ -1,87 +1,119 @@
-#statistic{
-    margin:0;
-    padding: 4rem;
-    background-color: var( --second-gray);
+#statistic {
+  margin: 0;
+  padding: 4rem 8rem;
+  background-color: var(--second-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width:1023px) {
+        padding: 2rem 2rem;
+        
+    }
+
+  #text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
+    #title {
+      color: var(--very-dark-blue);
+      font-size: 2em;
+      @media screen and (max-width:767px) {
+        text-align: center;
+        
+      }
+      
+    }
 
-    #text{
-        display: flex;
+    #subtitle {
+      text-align: center;
+      width: 65%;
+      color: var(--grayish-violet);
+    }
+  }
+
+  #cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    z-index: 10;
+    margin-bottom: 5rem;
+    @media screen and (max-width:1023px) {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        
+    }
+    .line {
+      position: absolute;
+      border: 3px solid var(--cyan);
+      background-color: var(--cyan);
+      width: 60%;
+      z-index: -1;
+      @media screen and (max-width:1023px) {
+        height: 100%;
+        width: 0;
+    }
+    }
+
+    #title {
+      color: var(--very-dark-blue);
+      margin-bottom: 0;
+      @media screen and (max-width:1023px) {
+        text-align: center;
+    }
+    }
+    #content {
+      color: var(--grayish-violet);
+    }
+
+    #card2 {
+      margin-top: 2.5rem;
+      @media screen and (max-width:1023px) {
         margin-top: 2rem;
-        #title{
-            color:var(--very-dark-blue);
-            font-size:2em;
-            margin-bottom: 0;
-        }
-
-        #subtitle{
-            text-align: center;
-            width:65%;
-            color:var(--grayish-violet);
-        }
+    }
     }
 
-    #cards{
-        
+    #card3 {
+        margin-top: 5rem;
+      @media screen and (max-width:1023px) {
+        margin-top: 2rem;
+    }
+    }
+
+    #card1,
+    #card2,
+    #card3 {
+        height: auto;
+        align-self: flex-start;
+      #content {
+        margin-bottom: 0;
+        @media screen and (max-width:1023px) {
+        text-align: center;
+    }
+      }
+
+      .icon {
         display: flex;
-        justify-content: space-around;
         align-items: center;
-        gap:2rem;
-        z-index:10;
-
-        .line{
-            position: absolute;
-            border: 3px solid var(--cyan);
-            background-color: var(--cyan);
-            width: 60%;
-            z-index: -1;
-        }
-
-        #title{
-            color:var(--very-dark-blue);
-            margin-bottom: 0;
-        }
-        #content{
-
-            color:var(--grayish-violet);
-           
-            
-        }
-
-        #card2{
-            margin-top: 4.5rem;
-        }
-
-        #card3{
-            margin-top:9rem;
-        }
-
-        #card1,#card2,#card3{
-            
-            
-            .icon{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: var(--dark);
-                padding:1.5rem;
-                border-radius: 9999px;
-                width:30px;
-                height: 30px;
-                margin-top: -4.25rem;
-            }
-
-            background-color: #fff;
-            padding:2rem;
-            border-radius: 0.5rem;
-        }
-
-        
+        justify-content: center;
+        background-color: var(--dark);
+        padding: 1.5rem;
+        border-radius: 9999px;
+        width: 30px;
+        height: 30px;
+        margin-top: -4.25rem;
+        @media screen and (max-width:1023px) {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
     }
+      }
 
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 0.5rem;
+    }
+  }
 }
